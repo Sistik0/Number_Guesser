@@ -15,6 +15,7 @@ else:
     print("Please type a number next time")
     quit()
 
+#NOTES FOR MYSELF ABOUT random's methods
 #generates a pseudorandom number from -1 to 11
 #random_number = random.randrange(start, stop)
 #for generating random numbers from 0-10 use
@@ -36,7 +37,9 @@ while True:
     if user_guess == random_number:
         print("You got it!")
         break
+    elif user_guess > random_number:
+        print("You were above the number!")
     else:
-        print("You got it wrong :(")
+        print("Your were below the number!")
 
 print("You got it in", guesses, "guesses")
